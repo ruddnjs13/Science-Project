@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7c2e4be8bad47459823412f0f2e863, type: 3}
+  m_Name: QuizSO
+  m_EditorClassIdentifier: 
+  Quizs:
+  - QuizType: 2
+    QuizText: Test Write Quiz Text
+    OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: wow
+  - QuizType: 1
+    QuizText: Test Select Quiz Text
+    OXAnswer: 0
+    SelectQuizAnswerText1: 1. wowowowow
+    SelectQuizAnswerText2: 2. zzzzzzzzzz
+    SelectQuizAnswerText3: 3. qwerqwer
+    SelectQuizAnswerText4: 4. aaasss
+    SelectQuizAnswerText5: 5. i want go dongarly
+    SelectAnswerNum: 5
+    WriteAnswer: 0
+  - QuizType: 1
+    QuizText: are you idiot?
+    OXAnswer: 1
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
