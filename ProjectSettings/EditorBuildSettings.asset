@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Work/PSB/00.Scenes/StageSelectScene.unity
     guid: 06e9b2887ea2abc4ca38a1c7ebb924b0
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/Stage/Stage1.unity
+    guid: ecee8574662f7ab4d8a95201fd88145f
   m_configObjects: {}

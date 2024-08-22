@@ -24,7 +24,7 @@ public class BtnManager : MonoBehaviour
 
     public void Stage1BtnClick()
     {
-        Debug.Log("Stage1");
+        SceneManager.LoadScene("Stage1");
     }
     public void Stage2BtnClick()
     {
