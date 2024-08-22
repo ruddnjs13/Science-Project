@@ -14,7 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Quizs:
   - QuizType: 2
-    QuizText: Test Quiz Text
+    QuizText: Test Write Quiz Text
     OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
     SelectAnswerNum: 0
     WriteAnswer: wow
+  - QuizType: 1
+    QuizText: Test Select Quiz Text
+    OXAnswer: 0
+    SelectQuizAnswerText1: 1. wowowowow
+    SelectQuizAnswerText2: 2. zzzzzzzzzz
+    SelectQuizAnswerText3: 3. qwerqwer
+    SelectQuizAnswerText4: 4. aaasss
+    SelectQuizAnswerText5: 5. i want go dongarly
+    SelectAnswerNum: 5
+    WriteAnswer: 0
+  - QuizType: 1
+    QuizText: are you idiot?
+    OXAnswer: 1
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
