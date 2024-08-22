@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class QuizManager : MonoBehaviour
 {
+    [SerializeField] private GameObject OXQuiz;
+    [SerializeField] private GameObject SelectQuiz;
+    [SerializeField] private GameObject WriteQuiz;
     [SerializeField] private GameObject QuizBack;
     [SerializeField] QuizSO quizSO;
     public List<Quiz> QuizList;
@@ -33,5 +36,12 @@ public class QuizManager : MonoBehaviour
         else if (q.QuizType == 1) quizAnswer.RightAnswer(q.SelectAnswerNum);
         else if (q.QuizType == 2) quizAnswer.RightAnswer(q.WriteAnswer);
         return q;
+    }
+    public void QuizUIEnd()
+    {
+        OXQuiz.SetActive(false);
+        QuizBack.SetActive(false);
+        SelectQuiz.SetActive(false);
+        WriteQuiz.SetActive(false);
     }
 }
