@@ -28,9 +28,36 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""id"": ""d62d278b-7e72-4cf7-bbf0-685d46d7d0f3"",
             ""actions"": [
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""Up"",
                     ""type"": ""Button"",
-                    ""id"": ""72b03109-0956-43df-a1c4-3b4c36f19e03"",
+                    ""id"": ""775d58d1-8590-4248-8e91-a2d3e16d4c4a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Down"",
+                    ""type"": ""Button"",
+                    ""id"": ""dd3aa6c0-3ff5-4f23-b5f9-9471561df454"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Left"",
+                    ""type"": ""Button"",
+                    ""id"": ""dcc4e946-e5c5-4388-9b58-8e08dbba9cef"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""685269f1-6b0b-4bfc-a726-068223e8beb5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -40,12 +67,45 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""e462bf72-10d5-47ec-8787-0153cb13c9e9"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""id"": ""e5dd1adc-5492-4fb3-8f7a-d99f3ac7d953"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dc91c85c-f1b2-453e-b2e9-44c7717b3746"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""31343539-f0b5-49c4-9a3f-693e8d8eb31f"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""665c12f8-d42b-4d47-b5bc-2d050ea83e8e"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -56,7 +116,10 @@ public partial class @Controls: IInputActionCollection2, IDisposable
 }");
         // PlayerInput
         m_PlayerInput = asset.FindActionMap("PlayerInput", throwIfNotFound: true);
-        m_PlayerInput_Jump = m_PlayerInput.FindAction("Jump", throwIfNotFound: true);
+        m_PlayerInput_Up = m_PlayerInput.FindAction("Up", throwIfNotFound: true);
+        m_PlayerInput_Down = m_PlayerInput.FindAction("Down", throwIfNotFound: true);
+        m_PlayerInput_Left = m_PlayerInput.FindAction("Left", throwIfNotFound: true);
+        m_PlayerInput_Right = m_PlayerInput.FindAction("Right", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -118,12 +181,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     // PlayerInput
     private readonly InputActionMap m_PlayerInput;
     private List<IPlayerInputActions> m_PlayerInputActionsCallbackInterfaces = new List<IPlayerInputActions>();
-    private readonly InputAction m_PlayerInput_Jump;
+    private readonly InputAction m_PlayerInput_Up;
+    private readonly InputAction m_PlayerInput_Down;
+    private readonly InputAction m_PlayerInput_Left;
+    private readonly InputAction m_PlayerInput_Right;
     public struct PlayerInputActions
     {
         private @Controls m_Wrapper;
         public PlayerInputActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Jump => m_Wrapper.m_PlayerInput_Jump;
+        public InputAction @Up => m_Wrapper.m_PlayerInput_Up;
+        public InputAction @Down => m_Wrapper.m_PlayerInput_Down;
+        public InputAction @Left => m_Wrapper.m_PlayerInput_Left;
+        public InputAction @Right => m_Wrapper.m_PlayerInput_Right;
         public InputActionMap Get() { return m_Wrapper.m_PlayerInput; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -133,16 +202,34 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerInputActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerInputActionsCallbackInterfaces.Add(instance);
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
+            @Up.started += instance.OnUp;
+            @Up.performed += instance.OnUp;
+            @Up.canceled += instance.OnUp;
+            @Down.started += instance.OnDown;
+            @Down.performed += instance.OnDown;
+            @Down.canceled += instance.OnDown;
+            @Left.started += instance.OnLeft;
+            @Left.performed += instance.OnLeft;
+            @Left.canceled += instance.OnLeft;
+            @Right.started += instance.OnRight;
+            @Right.performed += instance.OnRight;
+            @Right.canceled += instance.OnRight;
         }
 
         private void UnregisterCallbacks(IPlayerInputActions instance)
         {
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
+            @Up.started -= instance.OnUp;
+            @Up.performed -= instance.OnUp;
+            @Up.canceled -= instance.OnUp;
+            @Down.started -= instance.OnDown;
+            @Down.performed -= instance.OnDown;
+            @Down.canceled -= instance.OnDown;
+            @Left.started -= instance.OnLeft;
+            @Left.performed -= instance.OnLeft;
+            @Left.canceled -= instance.OnLeft;
+            @Right.started -= instance.OnRight;
+            @Right.performed -= instance.OnRight;
+            @Right.canceled -= instance.OnRight;
         }
 
         public void RemoveCallbacks(IPlayerInputActions instance)
@@ -162,6 +249,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     public PlayerInputActions @PlayerInput => new PlayerInputActions(this);
     public interface IPlayerInputActions
     {
-        void OnJump(InputAction.CallbackContext context);
+        void OnUp(InputAction.CallbackContext context);
+        void OnDown(InputAction.CallbackContext context);
+        void OnLeft(InputAction.CallbackContext context);
+        void OnRight(InputAction.CallbackContext context);
     }
 }

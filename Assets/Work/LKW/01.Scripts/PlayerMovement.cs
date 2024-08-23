@@ -4,27 +4,29 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //[SerializeField] private InputReader _inputReader;
+    [SerializeField] private InputReader _inputReader;
 
     [SerializeField] private float _moveLength;
     [SerializeField] private float _moveTime;
+
+    [SerializeField] private LayerMask _whatIsWall;
 
     private bool _isMove = false;
 
 
     private void OnEnable()
     {
-        //_inputReader.OnMoveEvenet += HandleOnMoveEvent;
+        _inputReader.OnMovementEvent += HandleOnMoveEvent;
     }
 
     private void OnDisable()
     {
-       // _inputReader.OnMoveEvenet -= HandleOnMoveEvent;
+        _inputReader.OnMovementEvent -= HandleOnMoveEvent;
     }
 
     private void HandleOnMoveEvent(Vector3 moveDir)
     {
-        if (!_isMove)
+        if (!_isMove && Physics2D.Raycast(transform.position, moveDir,1,_whatIsWall).collider == null)
         {
             Vector2 end = transform.position + moveDir * _moveLength;
 
