@@ -10,7 +10,7 @@ public class QuizAnswerChacker : MonoBehaviour
     private bool OXRightAnswer;
     private int SelectRightAnswer;
     private string WriteRightAnswer;
-    [SerializeField] TextMeshProUGUI inputField;
+    public TMP_InputField inputField;
     private void Awake()
     {
         quizManager = GetComponent<QuizManager>();
