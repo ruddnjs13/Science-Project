@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance = null;
-
     private readonly float _startTime = 30;
 
+    private bool isSolving = false;
+
+    public static GameManager Instance = null;
 
     private void Awake()
     {
@@ -22,7 +23,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     public float CurrentTime { get; private set; }
 
     private void Start()
@@ -32,8 +32,29 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        CurrentTime -= Time.deltaTime * 1.5f;
-
+        if (isSolving)
+        {
+            CurrentTime -= Time.deltaTime * 1.5f;
+        }
     }
-   
+
+    public void StopTimer()
+    {
+        isSolving = true;
+    }
+
+    public void PlayTimer()
+    {
+        isSolving = false;
+    }
+
+    public void IncreaseTimer(float amount)
+    {
+        CurrentTime += amount;
+    }
+
+    public void DecreaseTimer(float amount)
+    {
+        CurrentTime -= amount;
+    }
 }
