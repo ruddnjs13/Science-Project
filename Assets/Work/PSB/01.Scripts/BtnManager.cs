@@ -32,15 +32,15 @@ public class BtnManager : MonoBehaviour
     }
     public void Stage3BtnClick()
     {
-        Debug.Log("Stage3");
+        SceneManager.LoadScene("Stage3");
     }
     public void Stage4BtnClick()
     {
-        Debug.Log("Stage4");
+        SceneManager.LoadScene("Stage4");
     }
     public void Stage5BtnClick()
     {
-        Debug.Log("Stage5");
+        SceneManager.LoadScene("Stage5");
     }
 
 
