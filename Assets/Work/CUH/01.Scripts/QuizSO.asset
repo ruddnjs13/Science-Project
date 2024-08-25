@@ -33,7 +33,7 @@ MonoBehaviour:
     SelectQuizAnswerText5: 5. i want go dongarly
     SelectAnswerNum: 5
     WriteAnswer: 0
-  - QuizType: 1
+  - QuizType: 0
     QuizText: are you idiot?
     OXAnswer: 1
     SelectQuizAnswerText1: 
