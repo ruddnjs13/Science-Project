@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
-    private readonly float _startTime = 30;
+    public UnityEvent GameOverEvent;
+    public UnityEvent GameClearEvent;
+    [SerializeField] private float _startTime = 30;
 
-    private bool isSolving = false;
+    private bool isTimeStop = false;
 
     public static GameManager Instance = null;
 
@@ -32,7 +35,17 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (isSolving)
+        ApplyTime();
+    }
+
+    private void ApplyTime()
+    {
+        if (CurrentTime <= 0)
+        {
+            isTimeStop = true;
+            GameOverEvent?.Invoke();
+        }
+        if (!isTimeStop)
         {
             CurrentTime -= Time.deltaTime * 1.5f;
         }
@@ -40,12 +53,12 @@ public class GameManager : MonoBehaviour
 
     public void StopTimer()
     {
-        isSolving = true;
+        isTimeStop = true;
     }
 
     public void PlayTimer()
     {
-        isSolving = false;
+        isTimeStop = false;
     }
 
     public void IncreaseTimer(float amount)
