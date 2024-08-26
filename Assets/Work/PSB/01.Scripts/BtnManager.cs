@@ -8,7 +8,7 @@ public class BtnManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("StageSelectScene");
     }
 
     public void QuitGame()
@@ -43,7 +43,10 @@ public class BtnManager : MonoBehaviour
         SceneManager.LoadScene("Stage5");
     }
 
-
+    public void TestExit()
+    {
+        SceneManager.LoadScene("StageSelectScene");
+    }
 
 
 }
