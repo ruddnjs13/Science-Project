@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
         if (CurrentTime <= 0)
         {
             isTimeStop = true;
+            ResultUIManager.Instance.GamaOverUI();
             GameOverEvent?.Invoke();
         }
         if (!isTimeStop)
@@ -70,4 +71,10 @@ public class GameManager : MonoBehaviour
     {
         CurrentTime -= amount;
     }
+    public void ClearEvent()
+    {
+        ResultUIManager.Instance.GameClearUI();
+        GameClearEvent?.Invoke();
+    }
+
 }
