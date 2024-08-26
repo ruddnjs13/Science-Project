@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Work/PSB/00.Scenes/Stage/Stage5.unity
     guid: fd13bf3cb77863141881d7bcc1dd499d
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/Stage/StageClear.unity
+    guid: be86243e9c91aae40b47486ac4f1dd55
   m_configObjects: {}
