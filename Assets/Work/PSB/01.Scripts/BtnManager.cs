@@ -65,4 +65,10 @@ public class BtnManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void ClearBtn()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("StageClear");
+    }
 }

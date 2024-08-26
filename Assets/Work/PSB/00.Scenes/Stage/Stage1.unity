@@ -6492,7 +6492,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _startTime: 10
+  _startTime: 1000
 --- !u!4 &1784583702
 Transform:
   m_ObjectHideFlags: 0
