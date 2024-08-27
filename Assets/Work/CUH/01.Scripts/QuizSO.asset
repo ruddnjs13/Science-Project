@@ -13,28 +13,11 @@ MonoBehaviour:
   m_Name: QuizSO
   m_EditorClassIdentifier: 
   Quizs:
-  - QuizType: 2
-    QuizText: Test Write Quiz Text
-    OXAnswer: 0
-    SelectQuizAnswerText1: 
-    SelectQuizAnswerText2: 
-    SelectQuizAnswerText3: 
-    SelectQuizAnswerText4: 
-    SelectQuizAnswerText5: 
-    SelectAnswerNum: 0
-    WriteAnswer: wow
-  - QuizType: 1
-    QuizText: Test Select Quiz Text
-    OXAnswer: 0
-    SelectQuizAnswerText1: 1. wowowowow
-    SelectQuizAnswerText2: 2. zzzzzzzzzz
-    SelectQuizAnswerText3: 3. qwerqwer
-    SelectQuizAnswerText4: 4. aaasss
-    SelectQuizAnswerText5: 5. i want go dongarly
-    SelectAnswerNum: 5
-    WriteAnswer: 0
   - QuizType: 0
-    QuizText: are you idiot?
+    QuizText: "\uAE30\uCCB4\uC758 \uBC29\uCD9C \uC2A4\uD399\uD2B8\uB7FC\uC758 \uBC1D\uC740
+      \uC120\uC758 \uC704\uCE58\uC640 \uAC19\uC740 \uAE30\uCCB4\uC758 \uD761\uC218
+      \uC2A4\uD399\uD2B8\uB7FC\uC758 \uAC80\uC740 \uC120\uC758 \uC704\uCE58\uB294
+      \uAC19\uB2E4."
     OXAnswer: 1
     SelectQuizAnswerText1: 
     SelectQuizAnswerText2: 
@@ -43,3 +26,118 @@ MonoBehaviour:
     SelectQuizAnswerText5: 
     SelectAnswerNum: 0
     WriteAnswer: 
+  - QuizType: 0
+    QuizText: "\uB7EC\uB354\uD37C\uB4DC \uC6D0\uC790 \uBAA8\uD615\uC758 \uBB38\uC81C\uB294
+      \uC6D0\uC790\uAC00 \uC120 \uC2A4\uD399\uD2B8\uB7FC\uC744 \uBC29\uCD9C\uD558\uB294\uAC78
+      \uC124\uBA85\uD560 \uC218 \uC5C6\uC5C8\uB2E4."
+    OXAnswer: 1
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
+  - QuizType: 0
+    QuizText: "\uBCF4\uC5B4\uC758 \uC218\uC18C \uC6D0\uC790 \uBAA8\uD615\uC5D0\uC11C
+      \uC804\uC790\uB294 \uC5F0\uC18D\uB41C \uC5D0\uB108\uC9C0 \uAC12\uC744 \uAC16\uB294\uB2E4."
+    OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
+  - QuizType: 0
+    QuizText: "\uC218\uC18C\uC758 \uC804\uC790\uAC00 \uB4E4\uB72C\uC0C1\uD0DC\uC5D0\uC11C
+      n=1\uC778 \uADA4\uB3C4\uB85C \uC804\uC774\uD560\uB54C, \uC804\uC790\uB294 \uB77C\uC774\uBA3C
+      \uACC4\uC5F4\uC758 \uC804\uC790\uAE30\uD30C\uB97C \uBC29\uCD9C\uD55C\uB2E4."
+    OXAnswer: 1
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
+  - QuizType: 0
+    QuizText: "\uC801\uC678\uC120 \uC601\uC5ED\uC758 \uC120 \uC2A4\uD399\uD2B8\uB7FC\uC758
+      \uC9C4\uB3D9\uC218\uB294 \uC790\uC678\uC120 \uC601\uC5ED\uC758 \uC120 \uC2A4\uD399\uD2B8\uB7FC\uC758
+      \uC9C4\uB3D9\uC218\uBCF4\uB2E4 \uD06C\uB2E4."
+    OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
+  - QuizType: 1
+    QuizText: "\uC591\uC790\uC218 n = x\uC77C\uB54C\uC758 \uC0C1\uD0DC\uB97C \uBC14\uB2E5\uC0C1\uD0DC\uB77C\uACE0
+      \uD55C\uB2E4. \uC774\uB54C x\uC758 \uAC12\uC740?"
+    OXAnswer: 0
+    SelectQuizAnswerText1: 1
+    SelectQuizAnswerText2: 2
+    SelectQuizAnswerText3: 3
+    SelectQuizAnswerText4: 0
+    SelectQuizAnswerText5: -1
+    SelectAnswerNum: 1
+    WriteAnswer: 
+  - QuizType: 2
+    QuizText: "\uACE0\uC628\uC758 \uAE30\uCCB4\uC5D0\uC11C \uBC29\uCD9C\uB418\uB294
+      \uC2A4\uD399\uD2B8\uB7FC\uC744 6\uAE00\uC790\uB85C \uD558\uBA74?(\uB744\uC5B4\uC4F0\uAE30
+      \uC81C\uC678)"
+    OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: "\uBC29\uCD9C \uC2A4\uD399\uD2B8\uB7FC"
+  - QuizType: 0
+    QuizText: "\uC804\uC790\uAC00 \uC5D0\uB108\uC9C0\uB97C \uC5BB\uC73C\uBA74, \uADA4\uB3C4\uC640
+      \uADA4\uB3C4 \uC0AC\uC774\uC5D0 \uC874\uC7AC\uD560 \uC218 \uC788\uB2E4."
+    OXAnswer: 1
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
+  - QuizType: 2
+    QuizText: "n>=2\uC778 \uADA4\uB3C4\uC5D0\uC11C n=1\uC778 \uADA4\uB3C4\uB85C \uC804\uC774\uD560
+      \uB54C \uBC29\uCD9C\uD558\uB294 \uBE5B\uC758 \uACC4\uC5F4\uC740 XXX \uACC4\uC5F4\uC774\uB2E4.
+      XXX \uC5D0 \uB4E4\uC5B4\uAC08 \uB2E8\uC5B4\uB97C \uAD6C\uD558\uC2DC\uC624."
+    OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: "\uB77C\uC774\uBA3C"
+  - QuizType: 1
+    QuizText: "\uD761\uC218 \uC2A4\uD399\uD2B8\uB7FC\uC744 \uBCFC \uC218 \uC788\uB294
+      \uAC83\uC73C\uB85C \uC633\uC740 \uAC83\uC740?"
+    OXAnswer: 0
+    SelectQuizAnswerText1: "\uBD84\uAD11\uAE30\uB85C \uBCF8 \uD0DC\uC591\uBE5B"
+    SelectQuizAnswerText2: "\uBAA8\uB2C8\uD130"
+    SelectQuizAnswerText3: "\uBD84\uAD11\uAE30\uB85C \uBCF8 \uBC31\uC5F4\uB4F1"
+    SelectQuizAnswerText4: "\uC800\uC628\uC758 \uAE30\uCCB4"
+    SelectQuizAnswerText5: "\uACE0\uC628\uC758 \uAE30\uCCB4"
+    SelectAnswerNum: 4
+    WriteAnswer: 
+  - QuizType: 2
+    QuizText: "\uBC1C\uBA38 \uACC4\uC5F4\uC774 \uBC29\uCD9C\uD558\uB294 \uBE5B\uC740
+      XXXX \uC601\uC5ED\uC758 \uBE5B\uC774\uB2E4. X\uC5D0 \uB4E4\uC5B4\uAC08 \uB2E8\uC5B4\uB294?"
+    OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: "\uAC00\uC2DC\uAD11\uC120"
