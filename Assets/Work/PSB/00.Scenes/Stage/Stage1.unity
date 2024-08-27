@@ -9428,6 +9428,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _startTime: 1000
+  _currentStage: 1
+  _addTimes: 050000000f0000001e0000002d0000003c000000
 --- !u!4 &1784583702
 Transform:
   m_ObjectHideFlags: 0

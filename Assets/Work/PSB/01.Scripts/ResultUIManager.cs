@@ -25,20 +25,20 @@ public class ResultUIManager : MonoBehaviour
     }
     private void Start()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         _clearPanel.SetActive(false);
         _gameoverPanel.SetActive(false);
     }
 
     public void GamaOverUI()
     {
-        Time.timeScale = 0;
+        GameManager.Instance.TimeStop();
         _gameoverPanel.SetActive(true);
     }
 
     public void GameClearUI()
     {
-        Time.timeScale = 0;
+        GameManager.Instance.TimeStop();
         _clearPanel.SetActive(true);
     }
 

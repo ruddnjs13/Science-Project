@@ -24,51 +24,56 @@ public class BtnManager : MonoBehaviour
 
     public void Stage1BtnClick()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("Stage1");
+        GameManager.Instance._currentStage = 0;
     }
     public void Stage2BtnClick()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("Stage2");
+        GameManager.Instance._currentStage = 1;
     }
     public void Stage3BtnClick()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("Stage3");
+        GameManager.Instance._currentStage = 2;
     }
     public void Stage4BtnClick()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("Stage4");
+        GameManager.Instance._currentStage = 3;
     }
     public void Stage5BtnClick()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("Stage5");
+        GameManager.Instance._currentStage = 4;
     }
 
     public void NextBtn()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("StageSelectScene");
     }
 
     public void ExitBtn()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("TitleScene");
     }
 
     public void ReLoadBtn()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ClearBtn()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("StageClear");
     }
 }
