@@ -56,8 +56,8 @@ public class QuizPopup : MonoBehaviour
                 WriteQuizText.text = quiz.QuizText;
                 
             }
-            GameManager.Instance.TimePlay();
             gameObject.SetActive(false);
+            GameManager.Instance.TimePlay();
         }
     }
 }

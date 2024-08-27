@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public int _currentStage = 1;
     public int[] _addTimes = new int[5];
 
-    private bool isTimeStop = false;
+    private static bool isTimeStop = false;
 
     public static GameManager Instance = null;
 
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         }
         if (!isTimeStop)
         {
-            CurrentTime -= Time.deltaTime * 1.5f;
+            CurrentTime -= Time.deltaTime ;
         }
     }
 
