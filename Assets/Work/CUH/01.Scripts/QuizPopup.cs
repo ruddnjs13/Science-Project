@@ -28,7 +28,7 @@ public class QuizPopup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("퀴즈의 시간이다임마");
+            Debug.Log("퀴즈");
             Quiz quiz = quizManager.RandomQuiz();
             if (quiz.QuizType == 0)
             {
