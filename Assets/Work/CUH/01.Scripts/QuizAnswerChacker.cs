@@ -32,11 +32,12 @@ public class QuizAnswerChacker : MonoBehaviour
         Debug.Log("정답 체크");
         if (OX==OXRightAnswer)
         {
-            Debug.Log("맞았다임마");
+            Debug.Log("맞았습니다.");
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
         }
         else
         {
-            Debug.Log("틀렸다임마");
+            Debug.Log("틀렸습니다.");
         }
         quizManager.QuizUIEnd();
     }
@@ -45,11 +46,12 @@ public class QuizAnswerChacker : MonoBehaviour
         Debug.Log("정답 체크");
         if (value == SelectRightAnswer)
         {
-            Debug.Log("맞았다임마");
+            Debug.Log("맞았습니다.");
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
         }
         else
         {
-            Debug.Log("틀렸다임마");
+            Debug.Log("틀렸습니다.");
         }
         quizManager.QuizUIEnd();
     }
@@ -63,11 +65,12 @@ public class QuizAnswerChacker : MonoBehaviour
         Debug.Log("정답 체크");
         if (s == WriteRightAnswer)
         {
-            Debug.Log("맞았다임마");
+            Debug.Log("맞았습니다.");
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
         }
         else
         {
-            Debug.Log("틀렸다임마");
+            Debug.Log("틀렸습니다.");
         }
         quizManager.QuizUIEnd();
     }
