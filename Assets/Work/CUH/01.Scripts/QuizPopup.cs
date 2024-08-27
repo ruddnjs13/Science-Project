@@ -59,6 +59,7 @@ public class QuizPopup : MonoBehaviour
                 
             }
             gameObject.SetActive(false);
+            GameManager.Instance.TimePlay();
         }
     }
 }
