@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,6 +8,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent GameOverEvent;
     public UnityEvent GameClearEvent;
     [SerializeField] private float _startTime = 30;
+    public int _currentStage = 1;
+    public int[] _addTimes = new int[5];
 
     private bool isTimeStop = false;
 
@@ -75,6 +76,15 @@ public class GameManager : MonoBehaviour
     {
         ResultUIManager.Instance.GameClearUI();
         GameClearEvent?.Invoke();
+    }
+
+    public void TimeStop()
+    {
+        isTimeStop = true;
+    }
+    public void TimePlay()
+    {
+        isTimeStop = false;
     }
 
 }

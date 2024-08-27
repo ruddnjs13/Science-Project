@@ -28,6 +28,7 @@ public class QuizPopup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            GameManager.Instance.TimeStop();
             Debug.Log("ДыБо");
             Quiz quiz = quizManager.RandomQuiz();
             if (quiz.QuizType == 0)
@@ -55,6 +56,7 @@ public class QuizPopup : MonoBehaviour
                 WriteQuizText.text = quiz.QuizText;
                 
             }
+            GameManager.Instance.TimePlay();
             gameObject.SetActive(false);
         }
     }

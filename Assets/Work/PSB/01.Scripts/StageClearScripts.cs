@@ -13,7 +13,7 @@ public class StageClearScripts : MonoBehaviour
     }
     public void ClearBtn()
     {
-        Time.timeScale = 1;
+        GameManager.Instance.TimePlay();
         SceneManager.LoadScene("TitleScene");
     }
 

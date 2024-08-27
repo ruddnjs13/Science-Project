@@ -33,6 +33,7 @@ public class QuizAnswerChacker : MonoBehaviour
         if (OX==OXRightAnswer)
         {
             Debug.Log("맞았습니다.");
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
         }
         else
         {
@@ -46,6 +47,7 @@ public class QuizAnswerChacker : MonoBehaviour
         if (value == SelectRightAnswer)
         {
             Debug.Log("맞았습니다.");
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
         }
         else
         {
@@ -64,6 +66,7 @@ public class QuizAnswerChacker : MonoBehaviour
         if (s == WriteRightAnswer)
         {
             Debug.Log("맞았습니다.");
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
         }
         else
         {
