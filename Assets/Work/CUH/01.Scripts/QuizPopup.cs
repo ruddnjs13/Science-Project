@@ -28,18 +28,19 @@ public class QuizPopup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.Instance.TimeStop();
             Debug.Log("ДыБо");
             Quiz quiz = quizManager.RandomQuiz();
             if (quiz.QuizType == 0)
             {
                 Debug.Log("OX");
+                GameManager.Instance.TimeStop();
                 OXQuiz.SetActive(true);
                 OXQuizText.text = quiz.QuizText;
             }
             else if (quiz.QuizType == 1)
             {
                 Debug.Log("Select");
+                GameManager.Instance.TimeStop();
                 SelectQuiz.SetActive(true);
                 SelectQuizText.text = quiz.QuizText;
                 SelectAnswer1Text.text = quiz.SelectQuizAnswerText1;
@@ -52,11 +53,11 @@ public class QuizPopup : MonoBehaviour
             else if (quiz.QuizType == 2)
             {
                 Debug.Log("Write");
+                GameManager.Instance.TimeStop();
                 WriteQuiz.SetActive(true);
                 WriteQuizText.text = quiz.QuizText;
                 
             }
-            GameManager.Instance.TimePlay();
             gameObject.SetActive(false);
         }
     }

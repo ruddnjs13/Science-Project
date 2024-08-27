@@ -33,12 +33,14 @@ public class QuizAnswerChacker : MonoBehaviour
         if (OX==OXRightAnswer)
         {
             Debug.Log("맞았습니다.");
-            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage - 1]);
         }
         else
         {
             Debug.Log("틀렸습니다.");
+            GameManager.Instance.DecreaseTimer(10);
         }
+        GameManager.Instance.TimePlay();
         quizManager.QuizUIEnd();
     }
     public void AnswerCheck(int value)
@@ -47,12 +49,14 @@ public class QuizAnswerChacker : MonoBehaviour
         if (value == SelectRightAnswer)
         {
             Debug.Log("맞았습니다.");
-            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage - 1]);
         }
         else
         {
             Debug.Log("틀렸습니다.");
+            GameManager.Instance.DecreaseTimer(10);
         }
+        GameManager.Instance.TimePlay();
         quizManager.QuizUIEnd();
     }
     public void AnswerInput()
@@ -66,12 +70,14 @@ public class QuizAnswerChacker : MonoBehaviour
         if (s == WriteRightAnswer)
         {
             Debug.Log("맞았습니다.");
-            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage]);
+            GameManager.Instance.IncreaseTimer(GameManager.Instance._addTimes[GameManager.Instance._currentStage - 1]);
         }
         else
         {
             Debug.Log("틀렸습니다.");
+            GameManager.Instance.DecreaseTimer(10);
         }
+        GameManager.Instance.TimePlay();
         quizManager.QuizUIEnd();
     }
 }

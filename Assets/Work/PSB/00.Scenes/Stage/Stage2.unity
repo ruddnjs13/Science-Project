@@ -5567,6 +5567,7 @@ MonoBehaviour:
         m_CallState: 2
   _startTime: 200
   _currentStage: 2
+  _addTimes: 050000000f0000001e0000002d0000003c000000
 --- !u!4 &814748488
 Transform:
   m_ObjectHideFlags: 0
