@@ -5027,7 +5027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBB38\uC81C\uB2E4\uC784\uB9C8"
+  m_text: "\uBB38\uC81C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9679d4eb02930144c9c3efb17a04bed8, type: 2}
   m_sharedMaterial: {fileID: 6906663007264602650, guid: 9679d4eb02930144c9c3efb17a04bed8, type: 2}
@@ -5252,7 +5252,7 @@ Transform:
   m_GameObject: {fileID: 925531961}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.45, y: -1, z: 0}
+  m_LocalPosition: {x: 3.7, y: -2.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5540,7 +5540,7 @@ Transform:
   m_GameObject: {fileID: 940647661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.45, y: -1, z: 0}
+  m_LocalPosition: {x: -8.26, y: 4.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9795,7 +9795,7 @@ Transform:
   m_GameObject: {fileID: 1772080631}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.45, y: -1, z: 0}
+  m_LocalPosition: {x: 8.7, y: -3.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
