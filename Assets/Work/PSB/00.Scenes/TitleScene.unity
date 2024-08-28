@@ -1305,7 +1305,7 @@ MonoBehaviour:
   GameClearEvent:
     m_PersistentCalls:
       m_Calls: []
-  _startTime: 30
+  _startTime: 100
   _currentStage: 1
   _addTimes: 0000000000000000000000000000000000000000
 --- !u!4 &2059598808
