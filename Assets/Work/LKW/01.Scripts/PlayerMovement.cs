@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator GreedMoveCoroutine(Vector2 end)
     {
+        SoundManager.instance.PlaySfx(Sfx.MoveSound);
         Vector2 start = transform.position;
         float current = 0;
         float percent = 0;

@@ -3275,6 +3275,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _startTime: 30
+  _currentStage: 1
+  _addTimes: 0000000000000000000000000000000000000000
 --- !u!4 &2144861367
 Transform:
   m_ObjectHideFlags: 0
