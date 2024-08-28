@@ -6,15 +6,11 @@ using UnityEngine.UI;
 
 public class QuizAnswerChacker : MonoBehaviour
 {
-    QuizManager quizManager;
     private bool OXRightAnswer;
     private int SelectRightAnswer;
     private string WriteRightAnswer;
     public TMP_InputField inputField;
-    private void Awake()
-    {
-        quizManager = GetComponent<QuizManager>();
-    }
+
     public void RightAnswer(bool answer)
     {
         OXRightAnswer = answer;
@@ -41,7 +37,7 @@ public class QuizAnswerChacker : MonoBehaviour
             GameManager.Instance.DecreaseTimer(10);
         }
         GameManager.Instance.TimePlay();
-        quizManager.QuizUIEnd();
+        QuizManager.instance.QuizUIEnd();
     }
     public void AnswerCheck(int value)
     {
@@ -57,7 +53,7 @@ public class QuizAnswerChacker : MonoBehaviour
             GameManager.Instance.DecreaseTimer(10);
         }
         GameManager.Instance.TimePlay();
-        quizManager.QuizUIEnd();
+        QuizManager.instance.QuizUIEnd();
     }
     public void AnswerInput()
     {
@@ -78,6 +74,6 @@ public class QuizAnswerChacker : MonoBehaviour
             GameManager.Instance.DecreaseTimer(10);
         }
         GameManager.Instance.TimePlay();
-        quizManager.QuizUIEnd();
+        QuizManager.instance.QuizUIEnd();
     }
 }
