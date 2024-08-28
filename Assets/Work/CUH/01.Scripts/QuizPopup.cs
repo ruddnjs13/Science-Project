@@ -19,17 +19,13 @@ public class QuizPopup : MonoBehaviour
 
     [SerializeField] private GameObject WriteQuiz;
     [SerializeField] private TextMeshProUGUI WriteQuizText;
-    QuizManager quizManager;
-    private void Awake()
-    {
-        quizManager = FindAnyObjectByType<QuizManager>();
-    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             Debug.Log("ДыБо");
-            Quiz quiz = quizManager.RandomQuiz();
+            Quiz quiz = QuizManager.instance.RandomQuiz();
             if (quiz.QuizType == 0)
             {
                 Debug.Log("OX");
