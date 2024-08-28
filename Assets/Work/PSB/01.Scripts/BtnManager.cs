@@ -71,4 +71,30 @@ public class BtnManager : MonoBehaviour
         GameManager.Instance.TimePlay();
         SceneManager.LoadScene("StageClear");
     }
+
+    public void TutoGo()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
+
+    public void Tuto1Btn()
+    {
+        SceneManager.LoadScene("Tuto1Scene");
+    }
+    public void Tuto2Btn()
+    {
+        SceneManager.LoadScene("Tuto2Scene");
+    }
+    public void Tuto3Btn()
+    {
+        SceneManager.LoadScene("Tuto3Scene");
+    }
+    public void Tuto4Btn()
+    {
+        SceneManager.LoadScene("Tuto4Scene");
+    }
+    public void Tuto5Btn()
+    {
+        SceneManager.LoadScene("Tuto5Scene");
+    }
 }
