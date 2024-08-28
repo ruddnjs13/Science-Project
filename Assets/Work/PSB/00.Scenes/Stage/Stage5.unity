@@ -17105,7 +17105,7 @@ MonoBehaviour:
   GameOverEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1886690370}
         m_TargetAssemblyTypeName: ResultUIManager, Assembly-CSharp
         m_MethodName: GamaOverUI
         m_Mode: 1
@@ -17120,7 +17120,7 @@ MonoBehaviour:
   GameClearEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1918068614}
         m_TargetAssemblyTypeName: ResultUIManager, Assembly-CSharp
         m_MethodName: GameClearUI
         m_Mode: 1
@@ -17134,7 +17134,7 @@ MonoBehaviour:
         m_CallState: 2
   _startTime: 1000
   _currentStage: 5
-  _addTimes: 0000000000000000000000000000000000000000
+  _addTimes: 050000000f0000001e0000002d0000003c000000
 --- !u!4 &192159773
 Transform:
   m_ObjectHideFlags: 0
@@ -17817,10 +17817,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc6967035f976f468751c1155b797cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  QuizBack: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  SelectQuiz: {fileID: 1864787370}
+  WriteQuiz: {fileID: 1937165252}
+  QuizBack: {fileID: 814312534}
   quizSO: {fileID: 11400000, guid: 872f436aacc1aaf49b8556be98cfde15, type: 2}
   QuizList: []
 --- !u!4 &571193914
@@ -20514,7 +20514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92f4c81839e6704999259737bffe8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timePanel: {fileID: 0}
+  _timePanel: {fileID: 1477184556}
 --- !u!4 &1469751901
 Transform:
   m_ObjectHideFlags: 0
