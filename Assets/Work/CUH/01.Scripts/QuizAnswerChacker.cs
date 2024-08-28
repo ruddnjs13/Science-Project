@@ -10,7 +10,7 @@ public class QuizAnswerChacker : MonoBehaviour
     private int SelectRightAnswer;
     private string WriteRightAnswer;
     public TMP_InputField inputField;
-
+    [SerializeField] private QuizManager quizManager;
     public void RightAnswer(bool answer)
     {
         OXRightAnswer = answer;
@@ -37,7 +37,7 @@ public class QuizAnswerChacker : MonoBehaviour
             GameManager.Instance.DecreaseTimer(10);
         }
         GameManager.Instance.TimePlay();
-        QuizManager.instance.QuizUIEnd();
+        quizManager.QuizUIEnd();
     }
     public void AnswerCheck(int value)
     {
@@ -53,7 +53,7 @@ public class QuizAnswerChacker : MonoBehaviour
             GameManager.Instance.DecreaseTimer(10);
         }
         GameManager.Instance.TimePlay();
-        QuizManager.instance.QuizUIEnd();
+        quizManager.QuizUIEnd();
     }
     public void AnswerInput()
     {
@@ -74,6 +74,6 @@ public class QuizAnswerChacker : MonoBehaviour
             GameManager.Instance.DecreaseTimer(10);
         }
         GameManager.Instance.TimePlay();
-        QuizManager.instance.QuizUIEnd();
+        quizManager.QuizUIEnd();
     }
 }

@@ -17804,7 +17804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc0eb8a5bac71c4419532c88cb155b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField: {fileID: 0}
+  inputField: {fileID: 1986820104}
+  quizManager: {fileID: 571193913}
 --- !u!114 &571193913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17822,7 +17823,6 @@ MonoBehaviour:
   WriteQuiz: {fileID: 1937165252}
   QuizBack: {fileID: 814312534}
   quizSO: {fileID: 11400000, guid: 872f436aacc1aaf49b8556be98cfde15, type: 2}
-  QuizList: []
 --- !u!4 &571193914
 Transform:
   m_ObjectHideFlags: 0
@@ -18179,17 +18179,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c614986e14fd88e418ba7e24eb10ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  OXQuizText: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  SelectQuizText: {fileID: 0}
-  SelectAnswer1Text: {fileID: 0}
-  SelectAnswer2Text: {fileID: 0}
-  SelectAnswer3Text: {fileID: 0}
-  SelectAnswer4Text: {fileID: 0}
-  SelectAnswer5Text: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  WriteQuizText: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  OXQuizText: {fileID: 817921924}
+  SelectQuiz: {fileID: 1864787370}
+  SelectQuizText: {fileID: 1927698449}
+  SelectAnswer1Text: {fileID: 31244762}
+  SelectAnswer2Text: {fileID: 2097921072}
+  SelectAnswer3Text: {fileID: 1519492686}
+  SelectAnswer4Text: {fileID: 1670142573}
+  SelectAnswer5Text: {fileID: 1964057512}
+  WriteQuiz: {fileID: 1937165252}
+  WriteQuizText: {fileID: 501471374}
+  quizManager: {fileID: 571193913}
 --- !u!61 &601951071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18725,17 +18726,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c614986e14fd88e418ba7e24eb10ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  OXQuizText: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  SelectQuizText: {fileID: 0}
-  SelectAnswer1Text: {fileID: 0}
-  SelectAnswer2Text: {fileID: 0}
-  SelectAnswer3Text: {fileID: 0}
-  SelectAnswer4Text: {fileID: 0}
-  SelectAnswer5Text: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  WriteQuizText: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  OXQuizText: {fileID: 817921924}
+  SelectQuiz: {fileID: 1864787370}
+  SelectQuizText: {fileID: 1927698449}
+  SelectAnswer1Text: {fileID: 31244762}
+  SelectAnswer2Text: {fileID: 2097921072}
+  SelectAnswer3Text: {fileID: 1519492686}
+  SelectAnswer4Text: {fileID: 1670142573}
+  SelectAnswer5Text: {fileID: 1964057512}
+  WriteQuiz: {fileID: 1937165252}
+  WriteQuizText: {fileID: 501471374}
+  quizManager: {fileID: 571193913}
 --- !u!61 &692526608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19313,17 +19315,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c614986e14fd88e418ba7e24eb10ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  OXQuizText: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  SelectQuizText: {fileID: 0}
-  SelectAnswer1Text: {fileID: 0}
-  SelectAnswer2Text: {fileID: 0}
-  SelectAnswer3Text: {fileID: 0}
-  SelectAnswer4Text: {fileID: 0}
-  SelectAnswer5Text: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  WriteQuizText: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  OXQuizText: {fileID: 817921924}
+  SelectQuiz: {fileID: 1864787370}
+  SelectQuizText: {fileID: 1927698449}
+  SelectAnswer1Text: {fileID: 31244762}
+  SelectAnswer2Text: {fileID: 2097921072}
+  SelectAnswer3Text: {fileID: 1519492686}
+  SelectAnswer4Text: {fileID: 1670142573}
+  SelectAnswer5Text: {fileID: 1964057512}
+  WriteQuiz: {fileID: 1937165252}
+  WriteQuizText: {fileID: 501471374}
+  quizManager: {fileID: 571193913}
 --- !u!61 &948966907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20844,17 +20847,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c614986e14fd88e418ba7e24eb10ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  OXQuizText: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  SelectQuizText: {fileID: 0}
-  SelectAnswer1Text: {fileID: 0}
-  SelectAnswer2Text: {fileID: 0}
-  SelectAnswer3Text: {fileID: 0}
-  SelectAnswer4Text: {fileID: 0}
-  SelectAnswer5Text: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  WriteQuizText: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  OXQuizText: {fileID: 817921924}
+  SelectQuiz: {fileID: 1864787370}
+  SelectQuizText: {fileID: 1927698449}
+  SelectAnswer1Text: {fileID: 31244762}
+  SelectAnswer2Text: {fileID: 2097921072}
+  SelectAnswer3Text: {fileID: 1519492686}
+  SelectAnswer4Text: {fileID: 1670142573}
+  SelectAnswer5Text: {fileID: 1964057512}
+  WriteQuiz: {fileID: 1937165252}
+  WriteQuizText: {fileID: 501471374}
+  quizManager: {fileID: 571193913}
 --- !u!61 &1563615658
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21710,17 +21714,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c614986e14fd88e418ba7e24eb10ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  OXQuizText: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  SelectQuizText: {fileID: 0}
-  SelectAnswer1Text: {fileID: 0}
-  SelectAnswer2Text: {fileID: 0}
-  SelectAnswer3Text: {fileID: 0}
-  SelectAnswer4Text: {fileID: 0}
-  SelectAnswer5Text: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  WriteQuizText: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  OXQuizText: {fileID: 817921924}
+  SelectQuiz: {fileID: 1864787370}
+  SelectQuizText: {fileID: 1927698449}
+  SelectAnswer1Text: {fileID: 31244762}
+  SelectAnswer2Text: {fileID: 2097921072}
+  SelectAnswer3Text: {fileID: 1519492686}
+  SelectAnswer4Text: {fileID: 1670142573}
+  SelectAnswer5Text: {fileID: 1964057512}
+  WriteQuiz: {fileID: 1937165252}
+  WriteQuizText: {fileID: 501471374}
+  quizManager: {fileID: 571193913}
 --- !u!61 &1738966240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21849,17 +21854,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c614986e14fd88e418ba7e24eb10ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  OXQuizText: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  SelectQuizText: {fileID: 0}
-  SelectAnswer1Text: {fileID: 0}
-  SelectAnswer2Text: {fileID: 0}
-  SelectAnswer3Text: {fileID: 0}
-  SelectAnswer4Text: {fileID: 0}
-  SelectAnswer5Text: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  WriteQuizText: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  OXQuizText: {fileID: 817921924}
+  SelectQuiz: {fileID: 1864787370}
+  SelectQuizText: {fileID: 1927698449}
+  SelectAnswer1Text: {fileID: 31244762}
+  SelectAnswer2Text: {fileID: 2097921072}
+  SelectAnswer3Text: {fileID: 1519492686}
+  SelectAnswer4Text: {fileID: 1670142573}
+  SelectAnswer5Text: {fileID: 1964057512}
+  WriteQuiz: {fileID: 1937165252}
+  WriteQuizText: {fileID: 501471374}
+  quizManager: {fileID: 571193913}
 --- !u!61 &1741540943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22018,17 +22024,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c614986e14fd88e418ba7e24eb10ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  OXQuizText: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  SelectQuizText: {fileID: 0}
-  SelectAnswer1Text: {fileID: 0}
-  SelectAnswer2Text: {fileID: 0}
-  SelectAnswer3Text: {fileID: 0}
-  SelectAnswer4Text: {fileID: 0}
-  SelectAnswer5Text: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  WriteQuizText: {fileID: 0}
+  OXQuiz: {fileID: 1429648844}
+  OXQuizText: {fileID: 817921924}
+  SelectQuiz: {fileID: 1864787370}
+  SelectQuizText: {fileID: 1927698449}
+  SelectAnswer1Text: {fileID: 31244762}
+  SelectAnswer2Text: {fileID: 2097921072}
+  SelectAnswer3Text: {fileID: 1519492686}
+  SelectAnswer4Text: {fileID: 1670142573}
+  SelectAnswer5Text: {fileID: 1964057512}
+  WriteQuiz: {fileID: 1937165252}
+  WriteQuizText: {fileID: 501471374}
+  quizManager: {fileID: 571193913}
 --- !u!61 &1747608976
 BoxCollider2D:
   m_ObjectHideFlags: 0
