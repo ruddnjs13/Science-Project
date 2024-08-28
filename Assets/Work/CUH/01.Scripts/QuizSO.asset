@@ -217,3 +217,37 @@ MonoBehaviour:
     SelectQuizAnswerText5: 
     SelectAnswerNum: 0
     WriteAnswer: "\uBCF4\uC5B4"
+  - QuizType: 0
+    QuizText: "\uC804\uC790\uC758 \uC804\uC774\uB294 \uC804\uC790\uAC00 \uC5D0\uB108\uC9C0
+      \uC900\uC704 \uC0AC\uC774\uB97C \uC774\uB3D9\uD558\uB294 \uAC83 \uC774\uB2E4."
+    OXAnswer: 1
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
+  - QuizType: 0
+    QuizText: "\uC804\uC790\uAC00 n= 1\uC778 \uADA4\uB3C4\uC5D0\uC11C n = 2\uC778
+      \uADA4\uB3C4\uB85C \uC804\uC774\uD560 \uB5BC, \uC804\uC790\uB294 \uC5D0\uB108\uC9C0\uB97C
+      \uBC29\uCD9C\uD55C\uB2E4."
+    OXAnswer: 0
+    SelectQuizAnswerText1: 
+    SelectQuizAnswerText2: 
+    SelectQuizAnswerText3: 
+    SelectQuizAnswerText4: 
+    SelectQuizAnswerText5: 
+    SelectAnswerNum: 0
+    WriteAnswer: 
+  - QuizType: 1
+    QuizText: "\uC6D0\uC790\uC758 \uC2A4\uD399\uD2B8\uB7FC\uC740 \uC5B4\uB5A4 \uC2A4\uD399\uD2B8\uB7FC\uC73C\uB85C
+      \uB098\uD0C0\uB098\uB294\uAC00?"
+    OXAnswer: 0
+    SelectQuizAnswerText1: "\uC5F0\uC18D \uC2A4\uD399\uD2B8\uB7FC"
+    SelectQuizAnswerText2: "\uC5F0\uC1FD \uC2A4\uD399\uD2B8\uB7FC"
+    SelectQuizAnswerText3: "\uC120 \uC2A4\uD399\uD2B8\uB7FC"
+    SelectQuizAnswerText4: "\uC18C\uB9AC \uC2A4\uD399\uD2B8\uB7FC"
+    SelectQuizAnswerText5: "\uBB34\uD55C \uC2A4\uD399\uD2B8\uB7FC"
+    SelectAnswerNum: 3
+    WriteAnswer: 
