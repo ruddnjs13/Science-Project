@@ -9,53 +9,21 @@ public class QuizManager : MonoBehaviour
     [SerializeField] private GameObject WriteQuiz;
     [SerializeField] private GameObject QuizBack;
     [SerializeField] QuizSO quizSO;
-    public List<Quiz> QuizList;
     private QuizAnswerChacker quizAnswer;
     public static QuizManager instance;
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        if (transform.parent != null && transform.root != null)
-        {
-            DontDestroyOnLoad(transform.root.gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
         quizAnswer = GetComponent<QuizAnswerChacker>();
-        OXQuiz = GameObject.Find("OXQuiz");
-        SelectQuiz = GameObject.Find("SelectQuiz");
-        WriteQuiz = GameObject.Find("WriteQuiz");
-        QuizBack = GameObject.Find("QuizBack");
         OXQuiz.SetActive(false);
         SelectQuiz.SetActive(false);
         WriteQuiz.SetActive(false);
         QuizBack.SetActive(false);
-        SetQuiz();
     }
-    private void SetQuiz()
-    {
-        for(int i=0;i<quizSO.Quizs.Length; i++)
-        {
-            Quiz quiz = quizSO.Quizs[i];
-            QuizList.Add(quiz);
-        }
-    }
-    public Quiz RandomQuiz()
+    public Quiz QuizReturn()
     {
         QuizBack.SetActive(true);
-        int a = Random.Range(0,QuizList.Count-1);
-        Quiz q = QuizList[a];
-        QuizList.Remove(q);
+        Quiz q = QuizSelect.instance.RandomQuiz();
         if (q.QuizType == 0) quizAnswer.RightAnswer(q.OXAnswer);
         else if (q.QuizType == 1) quizAnswer.RightAnswer(q.SelectAnswerNum);
         else if (q.QuizType == 2) quizAnswer.RightAnswer(q.WriteAnswer);

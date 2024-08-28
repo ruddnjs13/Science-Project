@@ -749,6 +749,7 @@ MonoBehaviour:
   SelectAnswer5Text: {fileID: 1445075284}
   WriteQuiz: {fileID: 371132458}
   WriteQuizText: {fileID: 1306871755}
+  quizManager: {fileID: 1444403380}
 --- !u!61 &275623556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2089,6 +2090,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706422890}
   m_CullTransparentMesh: 1
+--- !u!1 &722741141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 722741142}
+  - component: {fileID: 722741143}
+  m_Layer: 0
+  m_Name: QuizReturn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &722741142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722741141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.2810409, y: 0.3975668, z: -0.10883117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &722741143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722741141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff325ecf2454a54cb1e62d989395d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuizList: []
+  quizSO: {fileID: 11400000, guid: 872f436aacc1aaf49b8556be98cfde15, type: 2}
 --- !u!1 &725600850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,6 +2311,7 @@ MonoBehaviour:
   SelectAnswer5Text: {fileID: 1445075284}
   WriteQuiz: {fileID: 371132458}
   WriteQuizText: {fileID: 1306871755}
+  quizManager: {fileID: 1444403380}
 --- !u!61 &779212517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5492,6 +5540,7 @@ MonoBehaviour:
   SelectAnswer5Text: {fileID: 1445075284}
   WriteQuiz: {fileID: 371132458}
   WriteQuizText: {fileID: 1306871755}
+  quizManager: {fileID: 1444403380}
 --- !u!61 &1172331356
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7888,7 +7937,7 @@ MonoBehaviour:
   m_margin: {x: -490.25195, y: -248.38818, z: -496.4995, w: -129.82346}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1306871756
@@ -8350,6 +8399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1955405772}
+  quizManager: {fileID: 1444403380}
 --- !u!114 &1444403380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8362,12 +8412,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc6967035f976f468751c1155b797cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OXQuiz: {fileID: 0}
-  SelectQuiz: {fileID: 0}
-  WriteQuiz: {fileID: 0}
-  QuizBack: {fileID: 0}
+  OXQuiz: {fileID: 79347197}
+  SelectQuiz: {fileID: 1770893321}
+  WriteQuiz: {fileID: 371132458}
+  QuizBack: {fileID: 1126639430}
   quizSO: {fileID: 11400000, guid: 872f436aacc1aaf49b8556be98cfde15, type: 2}
-  QuizList: []
 --- !u!4 &1444403381
 Transform:
   m_ObjectHideFlags: 0
@@ -8741,7 +8790,7 @@ MonoBehaviour:
   m_margin: {x: -510.7953, y: -140.80096, z: -502.27124, w: -77.74286}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1535157268
@@ -9843,7 +9892,7 @@ MonoBehaviour:
   m_margin: {x: -665.5292, y: -140.80096, z: -603.2102, w: -72.00769}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1955405771
@@ -10763,3 +10812,4 @@ SceneRoots:
   - {fileID: 342116735}
   - {fileID: 1444403381}
   - {fileID: 286575154}
+  - {fileID: 722741142}
