@@ -251,3 +251,27 @@ MonoBehaviour:
     SelectQuizAnswerText5: "\uBB34\uD55C \uC2A4\uD399\uD2B8\uB7FC"
     SelectAnswerNum: 3
     WriteAnswer: 
+  - QuizType: 1
+    QuizText: "\uAD11\uC790\uC758 \uC5D0\uB108\uC9C0\uB294 \uBE5B\uC758 XXX\uC5D0
+      \uBE44\uB840\uD55C\uB2E4. XXX\uC5D0 \uB4E4\uC5B4\uAC08 \uB9D0\uB85C \uC54C\uB9DE\uC740
+      \uAC83\uC740?"
+    OXAnswer: 0
+    SelectQuizAnswerText1: "\uC0AC\uC6D0\uC218"
+    SelectQuizAnswerText2: "\uC790\uC5F0\uC218"
+    SelectQuizAnswerText3: "\uC815\uC0C1\uC218"
+    SelectQuizAnswerText4: "\uD30C\uC7A5\uC218"
+    SelectQuizAnswerText5: "\uC9C4\uB3D9\uC218"
+    SelectAnswerNum: 5
+    WriteAnswer: 
+  - QuizType: 1
+    QuizText: "\uAD11\uC790\uC758 \uC5D0\uB108\uC9C0\uB294 \uBE5B\uC758 XXX\uC5D0
+      \uBE44\uB840\uD55C\uB2E4. XXX\uC5D0 \uB4E4\uC5B4\uAC08 \uB9D0\uB85C \uC54C\uB9DE\uC740
+      \uAC83\uC740?"
+    OXAnswer: 0
+    SelectQuizAnswerText1: "\uC0AC\uC6D0\uC218"
+    SelectQuizAnswerText2: "\uC790\uC5F0\uC218"
+    SelectQuizAnswerText3: "\uC815\uC0C1\uC218"
+    SelectQuizAnswerText4: "\uD30C\uC7A5\uC218"
+    SelectQuizAnswerText5: "\uC9C4\uB3D9\uC218"
+    SelectAnswerNum: 5
+    WriteAnswer: 
