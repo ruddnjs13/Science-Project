@@ -780,7 +780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBB38\uC81C\uB2E4\uC784\uB9C8"
+  m_text: "\uBB38\uC81C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9679d4eb02930144c9c3efb17a04bed8, type: 2}
   m_sharedMaterial: {fileID: 6906663007264602650, guid: 9679d4eb02930144c9c3efb17a04bed8, type: 2}
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
