@@ -11,10 +11,34 @@ public class QuizManager : MonoBehaviour
     [SerializeField] QuizSO quizSO;
     public List<Quiz> QuizList;
     private QuizAnswerChacker quizAnswer;
+    public static QuizManager instance;
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        if (transform.parent != null && transform.root != null)
+        {
+            DontDestroyOnLoad(transform.root.gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
         quizAnswer = GetComponent<QuizAnswerChacker>();
+        OXQuiz = GameObject.Find("OXQuiz");
+        SelectQuiz = GameObject.Find("SelectQuiz");
+        WriteQuiz = GameObject.Find("WriteQuiz");
+        QuizBack = GameObject.Find("QuizBack");
+        OXQuiz.SetActive(false);
+        SelectQuiz.SetActive(false);
+        WriteQuiz.SetActive(false);
         QuizBack.SetActive(false);
         SetQuiz();
     }
