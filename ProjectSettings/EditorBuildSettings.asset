@@ -29,4 +29,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Work/PSB/00.Scenes/Stage/StageClear.unity
     guid: be86243e9c91aae40b47486ac4f1dd55
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/TutorialScene.unity
+    guid: 0de043a49dd8db74c9b20917a6da5cdd
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/TutoScene/Tuto1Scene.unity
+    guid: 90cdc433eb89efb459e86e138b63c41e
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/TutoScene/Tuto2Scene.unity
+    guid: b83a34f93eed82a4b8c8bb6911d5f4fb
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/TutoScene/Tuto3Scene.unity
+    guid: 01c67f72cbec1ce46b6561c9f3a27d1a
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/TutoScene/Tuto4Scene.unity
+    guid: 66ce3b266aed40b4da3047e09bc2827e
+  - enabled: 1
+    path: Assets/Work/PSB/00.Scenes/TutoScene/Tuto5scene.unity
+    guid: ce88ee394938fca4692c92235c21f0bd
   m_configObjects: {}
