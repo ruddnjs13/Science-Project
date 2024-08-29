@@ -36,7 +36,7 @@ public class QuizAnswerChacker : MonoBehaviour
             Debug.Log("Æ²·È½À´Ï´Ù.");
             GameManager.Instance.DecreaseTimer(10);
         }
-        GameManager.Instance.TimePlay();
+        Time.timeScale = 1;
         quizManager.QuizUIEnd();
     }
     public void AnswerCheck(int value)
@@ -52,7 +52,7 @@ public class QuizAnswerChacker : MonoBehaviour
             Debug.Log("Æ²·È½À´Ï´Ù.");
             GameManager.Instance.DecreaseTimer(10);
         }
-        GameManager.Instance.TimePlay();
+        Time.timeScale = 1;
         quizManager.QuizUIEnd();
     }
     public void AnswerInput()
@@ -73,7 +73,7 @@ public class QuizAnswerChacker : MonoBehaviour
             Debug.Log("Æ²·È½À´Ï´Ù.");
             GameManager.Instance.DecreaseTimer(10);
         }
-        GameManager.Instance.TimePlay();
+        Time.timeScale = 1;
         quizManager.QuizUIEnd();
     }
 }

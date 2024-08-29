@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputReader: {fileID: 11400000, guid: aac8295752aa8c341a4d746427dc9072, type: 2}
   _moveLength: 1
-  _moveTime: 0.2
+  _moveTime: 0.125
   _whatIsWall:
     serializedVersion: 2
     m_Bits: 128
@@ -5109,7 +5109,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _startTime: 200
+  _startTime: 30
   _currentStage: 2
   _addTimes: 050000000f0000001e0000002d0000003c000000
 --- !u!4 &814748488
