@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 public enum Sfx
@@ -56,7 +53,7 @@ public class SoundManager : MonoBehaviour
     private void Update()
     {
         _bgmPlayer.volume = _bgmVolume;
-        
+
     }
 
     public float BgmVolue
@@ -69,7 +66,7 @@ public class SoundManager : MonoBehaviour
         {
             _bgmVolume = value;
         }
-    } 
+    }
     public float SfxVolue
     {
         get
@@ -86,18 +83,18 @@ public class SoundManager : MonoBehaviour
     {
 
         //µñ¼î³ë¸®¿¡ ³Ö¾î
-        foreach(AudioClip clip in _sfxList)
+        foreach (AudioClip clip in _sfxList)
         {
             sfxDic.Add(Enum.Parse<Sfx>(clip.name), clip);
-        } 
-        foreach(AudioClip clip in _bgmList)
+        }
+        foreach (AudioClip clip in _bgmList)
         {
-            bgmDic.Add((Bgm)Enum.Parse(typeof(Bgm),clip.name), clip);
+            bgmDic.Add((Bgm)Enum.Parse(typeof(Bgm), clip.name), clip);
         }
 
         GameObject bgmobj = new GameObject("BgmPlayer");
         bgmobj.transform.parent = transform;
-        _bgmPlayer =  bgmobj.AddComponent<AudioSource>();
+        _bgmPlayer = bgmobj.AddComponent<AudioSource>();
         _bgmPlayer.volume = _bgmVolume;
         _bgmPlayer.loop = true;
         _bgmPlayer.playOnAwake = false;
@@ -105,7 +102,7 @@ public class SoundManager : MonoBehaviour
         GameObject sfxobj = new GameObject("SfxPlayer");
         sfxobj.transform.parent = transform;
         _sfxPlayers = new AudioSource[_channelCount];
-        for (int i = 0; i< _channelCount; i++)
+        for (int i = 0; i < _channelCount; i++)
         {
             _sfxPlayers[i] = sfxobj.AddComponent<AudioSource>();
             _sfxPlayers[i].playOnAwake = false;
