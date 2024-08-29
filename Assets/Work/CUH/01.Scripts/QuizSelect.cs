@@ -38,6 +38,10 @@ public class QuizSelect : MonoBehaviour
 
     public Quiz RandomQuiz()
     {
+        if(QuizList.Count <= 0)
+        {
+            SetQuiz();
+        }
         int a = Random.Range(0, QuizList.Count - 1);
         Quiz q = QuizList[a];
         QuizList.Remove(q);
