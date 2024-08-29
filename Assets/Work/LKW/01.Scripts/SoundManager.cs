@@ -4,7 +4,8 @@ using UnityEngine;
 
 public enum Sfx
 {
-    MoveSound
+    MoveSound,
+    Btn
 }
 public enum Bgm
 {
@@ -82,7 +83,7 @@ public class SoundManager : MonoBehaviour
     private void Initialize()
     {
 
-        //µñ¼î³ë¸®¿¡ ³Ö¾î
+        //ï¿½ï¿½ï¿½ë¸®ï¿½ï¿½ ï¿½Ö¾ï¿½
         foreach (AudioClip clip in _sfxList)
         {
             sfxDic.Add(Enum.Parse<Sfx>(clip.name), clip);

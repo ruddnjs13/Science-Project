@@ -9,11 +9,13 @@ public class BtnManager : MonoBehaviour
     public void StartGame()
     {
         Time.timeScale = 1;
+        SoundManager.instance.PlaySfx(Sfx.Btn);
         SceneManager.LoadScene("StageSelectScene");
     }
 
     public void QuitGame()
     {
+        SoundManager.instance.PlaySfx(Sfx.Btn);
         Application.Quit();
 
         #if UNITY_EDITOR
