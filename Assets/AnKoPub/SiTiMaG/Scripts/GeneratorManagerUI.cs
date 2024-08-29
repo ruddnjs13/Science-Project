@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.Tilemaps;
 
 [ExecuteInEditMode]
@@ -15,12 +13,12 @@ public class GeneratorManagerUI : Editor
 
     public override void OnInspectorGUI()
     {
-        manager = (GeneratorManager)target;        
+        manager = (GeneratorManager)target;
         manager.generatorIndex = EditorGUILayout.Popup("Generator type", manager.generatorIndex, manager.mapGenerators);
         manager.width = EditorGUILayout.IntField("Map width", manager.width);
-        manager.height = EditorGUILayout.IntField("Map height", manager.height);       
+        manager.height = EditorGUILayout.IntField("Map height", manager.height);
         manager.floor = (Tilemap)EditorGUILayout.ObjectField("Tilemap for floor", manager.floor, typeof(Tilemap), true);
-        manager.wall = (Tilemap)EditorGUILayout.ObjectField("Tilemap for walls", manager.wall, typeof(Tilemap), true);        
+        manager.wall = (Tilemap)EditorGUILayout.ObjectField("Tilemap for walls", manager.wall, typeof(Tilemap), true);
         manager.floorTile = (TileBase)EditorGUILayout.ObjectField("Tile for floor", manager.floorTile, typeof(TileBase), false);
         manager.wallTile = (TileBase)EditorGUILayout.ObjectField("Tile for walls", manager.wallTile, typeof(TileBase), false);
 
@@ -40,17 +38,17 @@ public class GeneratorManagerUI : Editor
                 break;
         }
 
-        manager.placeDecor = EditorGUILayout.Toggle("Place decorations", manager.placeDecor);        
+        manager.placeDecor = EditorGUILayout.Toggle("Place decorations", manager.placeDecor);
         if (manager.placeDecor)
         {
             manager.chanceOfDecorate = EditorGUILayout.FloatField("Chance of decorate", manager.chanceOfDecorate);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("decorationsList"), true);
             serializedObject.ApplyModifiedProperties();
         }
-        
+
         manager.placeEnvironment = EditorGUILayout.Toggle("Place additional environment", manager.placeEnvironment);
         if (manager.placeEnvironment)
-        {                        
+        {
             manager.envDeathLimit = EditorGUILayout.IntField("Environment cells count to stay dead", manager.envDeathLimit);
             manager.envBirthLimit = EditorGUILayout.IntField("Environment cells count to stay alive", manager.envBirthLimit);
             manager.envNumberOfSteps = EditorGUILayout.IntField("Environment number of steps", manager.envNumberOfSteps);
@@ -59,8 +57,8 @@ public class GeneratorManagerUI : Editor
             serializedObject.ApplyModifiedProperties();
         }
 
-        if (clearMap) manager.ClearAllMaps();                 
-        
+        if (clearMap) manager.ClearAllMaps();
+
         GUILayout.BeginHorizontal();
         buildMap = GUILayout.Button("Generate new map");
         clearMap = GUILayout.Button("Clear map");
@@ -122,7 +120,7 @@ public class GeneratorManagerUI : Editor
         if (buildMap)
         {
             manager.ClearAllMaps();
-            manager.GenerateNewMap("Maze");            
+            manager.GenerateNewMap("Maze");
         }
     }
 }
