@@ -290,7 +290,7 @@ MonoBehaviour:
   - QuizType: 0
     QuizText: "\uC6D0\uC790\uD575\uC5D0\uC11C\uBD80\uD130 \uAC00\uC7A5 \uBA3C \uAC83
       \uBD80\uD130 n = 1, n = 2, n = 3... \uC778 \uADA4\uB3C4\uB77C\uACE0 \uD558\uBA70,
-      n\uC758 \uAC12\uC744 \uC591\uC790\uC218 \uB77C\uACE0 \uD55C\uB2E4. X"
+      n\uC758 \uAC12\uC744 \uC591\uC790\uC218 \uB77C\uACE0 \uD55C\uB2E4."
     OXAnswer: 0
     SelectQuizAnswerText1: 
     SelectQuizAnswerText2: 
@@ -311,4 +311,4 @@ MonoBehaviour:
     SelectQuizAnswerText4: 
     SelectQuizAnswerText5: 
     SelectAnswerNum: 0
-    WriteAnswer: "\uD30C\uC174"
+    WriteAnswer: "\uD30C\uC174 \uACC4\uC5F4"

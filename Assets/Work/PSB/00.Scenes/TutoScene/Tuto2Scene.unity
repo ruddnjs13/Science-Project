@@ -887,7 +887,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "8. \uC804\uC790\uAC00 \uC5D0\uB108\uC9C0\uB97C \uC5BB\uC73C\uBA74, \uADA4\uB3C4\uC640
-    \uADA4\uB3C4 \uC0AC\uC774\uC5D0 \uC874\uC7AC\uD560 \uC218 \uC788\uB2E4. \nO"
+    \uADA4\uB3C4 \uC0AC\uC774\uC5D0 \uC874\uC7AC\uD560 \uC218 \uC788\uB2E4. \nX"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9679d4eb02930144c9c3efb17a04bed8, type: 2}
   m_sharedMaterial: {fileID: 6906663007264602650, guid: 9679d4eb02930144c9c3efb17a04bed8, type: 2}
