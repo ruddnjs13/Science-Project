@@ -4805,10 +4805,11 @@ MonoBehaviour:
   _channelCount: 16
   _sfxList:
   - {fileID: 8300000, guid: 245965889d0a183438ef3478b27122c0, type: 3}
-  _sfxVolume: 10
+  - {fileID: 8300000, guid: 52104bc3637e70540be457e0ba1ba9cd, type: 3}
+  _sfxVolume: 1
   _bgmList:
   - {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
-  _bgmVolume: 5
+  _bgmVolume: 0.2
 --- !u!4 &1696514145
 Transform:
   m_ObjectHideFlags: 0
