@@ -32,7 +32,7 @@ public class ResultUIManager : MonoBehaviour
 
     public void GamaOverUI()
     {
-        Time.timeScale = 0;
+        GameManager.Instance.StopTimer();
         _gameoverPanel.SetActive(true);
     }
 

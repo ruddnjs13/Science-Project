@@ -68,7 +68,6 @@ public class BtnManager : MonoBehaviour
 
     public void ReLoadBtn()
     {
-        GameManager.Instance.TimePlay();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

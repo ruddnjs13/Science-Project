@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        isTimeStop = false;
         CurrentTime = _startTime;
     }
 
