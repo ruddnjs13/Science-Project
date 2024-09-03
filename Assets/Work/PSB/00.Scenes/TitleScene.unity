@@ -4806,6 +4806,8 @@ MonoBehaviour:
   _sfxList:
   - {fileID: 8300000, guid: 245965889d0a183438ef3478b27122c0, type: 3}
   - {fileID: 8300000, guid: 52104bc3637e70540be457e0ba1ba9cd, type: 3}
+  - {fileID: 8300000, guid: da0c63423a914f6488f0ef5d0767249c, type: 3}
+  - {fileID: 8300000, guid: 230649963db6b8843a1362f332db8131, type: 3}
   _sfxVolume: 1
   _bgmList:
   - {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}

@@ -5,7 +5,9 @@ using UnityEngine;
 public enum Sfx
 {
     MoveSound,
-    Btn
+    Btn,
+    Ddang,
+    Dingdogdag
 }
 public enum Bgm
 {
